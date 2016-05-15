@@ -1,0 +1,54 @@
+@import "bootstrap";
+@font-face {
+    font-family: Geotica;
+    src: url('fonts/Geotica_Three-webfont.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+	font-size: 16px;
+}
+
+body > .ember-view {
+    height: 90%;  /* quick IE8 fix */
+    height: calc(100% - 52.5667px);
+}
+
+.ember-view {
+    height: 100%;
+}
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    background-color: #B5D0D0;
+}
+
+header {
+    z-index: 800;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0.5em 0;
+    background: #f71;
+    // position: absolute;
+    // top: 0;
+    // height: 36.5667px;
+
+    a, a:hover {
+        color: white;
+    }
+    #title {
+        font-family: Geotica, sans-serif;
+        font-size: 1.6em;
+    }
+    #subtitle {
+        padding-top: 0.5em;
+    }
+    .links {
+        font-weight: bold;
+        padding-top: 0.5em;
+        text-align: right;
+    }
+}

@@ -1,0 +1,13 @@
+{{#leaflet-map lat=lat lng=lng zoom=zoom minZoom=2 maxZoom=18 onLoad=(action "getPlaces") as |layers|}}
+  {{tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}}
+    {{#marker-cluster-layer}}
+      {{#each places as |place|}}
+        {{#marker-layer location=place.location}}
+            {{place.owner.firstName}} {{place.owner.lastName}}<br>
+            {{place.city}}<br>
+            <a href="{{place.link}}">Vidi</a>
+            {{yield}}
+        {{/marker-layer}}
+      {{/each}}
+    {{/marker-cluster-layer}}
+{{/leaflet-map}}

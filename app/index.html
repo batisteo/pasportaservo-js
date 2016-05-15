@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PasportaservoJs</title>
+    <title>Mapo | Pasporta Servo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,6 +15,21 @@
     {{content-for "head-footer"}}
   </head>
   <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2 col-sm-3 col-md-2" id="title">
+          <a href="/">P<span class="hidden-xs">asporta&nbsp;</span>S<span class="hidden-xs">ervo</span></a>
+        </div>
+        <div class="hidden-xs col-sm-3 col-md-3" id="subtitle">E-gastigantoj tra la mondo</div>
+        <div class="col-xs-3 col-sm-2 col-md-1 col-md-offset-4 enveloppe links">&nbsp;</div>
+        <div class="col-xs-2 col-sm-2 col-md-1 links">
+            <a href="#">ensaluti</a>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-1 links">
+          <a href="#">registriĝi</a>
+        </div>
+      </div>
+    </header>
     {{content-for "body"}}
 
     <script src="assets/vendor.js"></script>
