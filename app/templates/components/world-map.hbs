@@ -1,4 +1,4 @@
-{{#leaflet-map lat=lat lng=lng zoom=zoom minZoom=2 maxZoom=18 onLoad=(action "getPlaces") as |layers|}}
+{{#leaflet-map lat=lat lng=lng zoom=zoom minZoom=2 maxZoom=18 onLoad=(action "getPlaces") onMoveend=(action "getPlaces") as |layers|}}
   {{tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}}
     {{#marker-cluster-layer}}
       {{#each places as |place|}}
