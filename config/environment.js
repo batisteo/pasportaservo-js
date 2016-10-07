@@ -4,9 +4,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'pasportaservo-js',
     environment: environment,
+    rootURL: '/',
     locationType: 'auto',
     host: 'https://pasportaservo.org',
-    baseURL: '/mapo/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -27,7 +27,6 @@ module.exports = function(environment) {
     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.host = 'http://localhost:8000';
-    ENV.baseURL = '/';
     // ENV.contentSecurityPolicy = {
     //   'connect-src': "'self' http://localhost:8000"
     // }
@@ -35,7 +34,6 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
-    ENV.baseURL = '/';
     ENV.locationType = 'none';
 
     // keep test console output quieter
@@ -46,6 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootURL = '/mapo/';
   }
 
   return ENV;

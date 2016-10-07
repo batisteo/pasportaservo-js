@@ -9,8 +9,8 @@
 
     {{content-for "head"}}
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/pasportaservo-js.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/pasportaservo-js.css">
 
     {{content-for "head-footer"}}
   </head>
@@ -32,8 +32,8 @@
     </header>
     {{content-for "body"}}
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/pasportaservo-js.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/pasportaservo-js.js"></script>
 
     {{content-for "body-footer"}}
   </body>
